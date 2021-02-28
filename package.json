@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/EhabShaaban/cypress-vuetodo#readme",
   "devDependencies": {
-    "cypress": "^6.5.0"
+    "cypress": "^6.5.0",
+    "cypress-image-snapshot": "^4.0.1"
   }
 }

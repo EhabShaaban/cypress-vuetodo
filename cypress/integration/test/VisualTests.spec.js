@@ -6,6 +6,8 @@ describe('visual suite', function() {
 
     it('first visual test', function(){
         const todoPage = new TodoPage()
+        
         todoPage.visit()
+        cy.matchImageSnapshot();
     })
 })
