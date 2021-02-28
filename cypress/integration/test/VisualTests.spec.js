@@ -2,12 +2,21 @@
 
 import TodoPage from '../page/TodoPage'
 
-describe('visual suite', function() {
+const sizes = [
+    ['iphone-6', 'landscape'],
+    'iphone-6',
+    'ipad-2',
+    ['ipad-2', 'landscape'],
+    [1920, 1080],
+];
 
-    it('first visual test', function(){
-        const todoPage = new TodoPage()
-        
-        todoPage.visit()
-        cy.matchImageSnapshot();
-    })
-})
+describe('Visual regression tests', () => {
+    const todoPage = new TodoPage()
+    sizes.forEach((size) => {
+        it(`Should match previous screenshot when '${size}' resolution`, () => {
+            cy.setResolution(size);
+            todoPage.visit();
+            cy.matchImageSnapshot();
+        });
+    });
+});

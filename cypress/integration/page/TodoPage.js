@@ -10,3 +10,4 @@ class TodoPage
 }
 
 export default TodoPage
+// cy.get('*[class^="fa fa-edit"]') > edit btns
