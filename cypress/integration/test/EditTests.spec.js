@@ -2,6 +2,7 @@
 import TodoPage from '../page/TodoPage'
 
 const todoPage = new TodoPage()
+
 describe('Edit all tests, foreign text', function() {
 
     beforeEach(() => {
@@ -35,6 +36,7 @@ describe('Edit all tests, foreign text', function() {
 })
 
 describe('Edit all tests, numbers&signs', function() {
+
     beforeEach(() => {
         todoPage.visit();
         cy.fixture('numbers_signs').as('data')
@@ -50,6 +52,7 @@ describe('Edit all tests, numbers&signs', function() {
 })
 
 describe('Edit single todo then press enter', function() {
+    
     beforeEach(() => {
         todoPage.visit();
         cy.fixture('foreign_text').as('text')
