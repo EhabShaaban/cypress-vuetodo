@@ -33,6 +33,7 @@ describe('Edit all tests, foreign text', function() {
     it('Should edit all todos in the page with italian', function(){
         todoPage.editAll(this.text.ital);
     })
+
 })
 
 describe('Edit all tests, numbers&signs', function() {
@@ -49,6 +50,7 @@ describe('Edit all tests, numbers&signs', function() {
     it('Should edit all todos in the page with numbers', function(){        
         todoPage.editAll(this.data.numbers);
     })
+
 })
 
 describe('Edit single todo then press enter', function() {
@@ -61,4 +63,5 @@ describe('Edit single todo then press enter', function() {
     it('Should edit one single todo and press enter', function(){        
         todoPage.editFirstTodoThenEnter(this.text.de)
     })
+    
 })
