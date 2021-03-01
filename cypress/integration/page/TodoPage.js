@@ -14,14 +14,19 @@ class TodoPage {
         })
     }
 
-    editAll() {
+    editAll(text) {
         cy.get('*[class^="fa fa-edit"]').each($component => {
             cy.wrap($component)
                 .wait(50)
                 .click();
             this.uncheckAll;
-            cy.wrap($component).type(" und das ist alles für die Banane!");
+            cy.wrap($component).type(" "+text);
         })
+    }
+
+    editFirstTodoThenEnter(text){
+        cy.get('*[class^="fa fa-edit"]').eq(0).click()
+        cy.get('*[class^="flex-grow-1"]').eq(0).type(text, '{enter}')
     }
 }
 

@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-
 import TodoPage from '../page/TodoPage'
 
 const sizes = [
