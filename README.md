@@ -1,4 +1,4 @@
-![Alt Text](https://drive.google.com/uc?export=view&id=1MJeH1KPLXISZkVcv25JsUUF_IcRWgwLK)
+![Alt Text](https://drive.google.com/uc?export=view&id=1raLUgMkuwVEwOwR_jukltqR7mGFtkY9o)
 
 #### Setup
 
