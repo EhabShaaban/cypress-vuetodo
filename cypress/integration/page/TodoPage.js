@@ -26,6 +26,12 @@ class TodoPage {
         //lst of all todos btns after check
         return cy.get('*[class^="btn border-0 flex-grow-1 text-left shadow-none completed"]')
     }
+    getTodoLi(){
+        return cy.get('*[class^="d-flex align-items-center list-group-item"]')
+    }
+    getHeader(){
+        return cy.get('h1')
+    }
 
     visit() {
         cy.visit(Cypress.config().baseUrl);
