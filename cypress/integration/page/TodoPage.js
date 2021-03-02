@@ -22,6 +22,10 @@ class TodoPage {
         //input field for new todo inserts
         return cy.get('input')
     }
+    todoBtnAfterUncheckByClassName(){
+        //lst of all todos btns after check
+        return cy.get('*[class^="btn border-0 flex-grow-1 text-left shadow-none completed"]')
+    }
 
     visit() {
         cy.visit(Cypress.config().baseUrl);
