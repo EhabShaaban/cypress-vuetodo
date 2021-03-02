@@ -1,7 +1,7 @@
 #### Setup
 
 > Start by installing cypress if you already don't have it https://www.cypress.io/
-+ and then ``npm install``
++ Run ``npm install``
 
 #### How to run
 
