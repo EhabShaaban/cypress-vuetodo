@@ -10,6 +10,10 @@ class TodoPage {
         //lst of all edit btns
         return cy.get('*[class^="fa fa-edit"]')
     }
+    deleteBtnByClassName(){
+        //lst of all delete btns
+        return cy.get('*[class^="fa fa-trash"]')
+    }
     todoAfterEditClickBtnByClass(){
         //lst of all todos btns after clicking edit btn
         return cy.get('*[class^="flex-grow-1"]')
@@ -38,7 +42,7 @@ class TodoPage {
                 .wait(50)
                 .click()
             cy.wrap($component)
-            .type(" "+text);
+            .type(" "+text)
         })
     }
 
@@ -57,6 +61,13 @@ class TodoPage {
         .type(text)
         .type('{enter}')
     }
+    
+    deleteTodo(){
+        this.deleteBtnByClassName()
+        .eq(1)
+        .click()
+    }
+
 }
 
 export default TodoPage
