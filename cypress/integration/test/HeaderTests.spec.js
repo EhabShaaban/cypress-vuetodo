@@ -9,7 +9,7 @@ describe('Header tests', function() {
         todoPage.visit();
     });
 
-    it('test', function(){
+    it('Should have correct page header', function(){
         todoPage.getHeader().should('have.text', 'My to-dos')
     })
     

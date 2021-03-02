@@ -56,6 +56,13 @@ class TodoPage {
         })
     }
 
+    deleteAllTodo(){
+        this.getTodoLi().each($component => {
+            $component.remove()
+        })
+
+    }
+
     editFirstTodoThenEnter(text){
         this.editBtnByClassName()
         .eq(0)
