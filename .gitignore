@@ -27,5 +27,6 @@ build/Release
 
 node_modules/
 cypress/videos
+cypress/reports/
 cypress/screenshots
 cypress/snapshots/
