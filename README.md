@@ -18,5 +18,6 @@
 + cypress
 + mochawesome
 + POM
++ cypress image snapshot
 
 > All JSON files should be living under *../cypress/fixtures*
